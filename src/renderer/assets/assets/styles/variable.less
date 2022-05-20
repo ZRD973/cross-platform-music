@@ -1,0 +1,36 @@
+@left-side-black:rgb(23, 23, 24);
+@right-side-black: rgb(30, 30, 32);
+@left-side-grey:rgb(74, 74, 72);
+@right-side-grey: rgb(82, 82, 82);
+@new-window-black: rgb(41, 41, 43);
+@new-window-grey: rgb(158, 59, 59);
+
+#mixin left_side_color {
+    [data-theme="black"] & {
+        background-color: @left-side-black;
+    }
+
+    [data-theme="grey"] & {
+        background-color: @left-side-grey;
+    }
+}
+
+#mixin right_side_color {
+    [data-theme="black"] & {
+        background-color: @right-side-black;
+    }
+
+    [data-theme="grey"] & {
+        background-color: @right-side-grey;
+    }
+}
+
+#mixin new_window_color {
+    [data-theme="black"] & {
+        background-color: @new-window-black;
+    }
+
+    [data-theme="grey"] & {
+        background-color: @new-window-grey;
+    }
+}
